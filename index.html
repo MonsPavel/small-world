@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Маленький мир — симулятор автономного поселения</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="world"></canvas>
+
+  <header id="topbar" class="glass"></header>
+
+  <aside id="inspector" class="glass hidden"></aside>
+
+  <section id="journal-box" class="glass">
+    <header id="journal-head">
+      <span class="jh-title">Хроника поселения</span>
+      <button class="jh-toggle" title="Свернуть/развернуть">▾</button>
+    </header>
+    <ul id="journal-list"></ul>
+  </section>
+
+  <button id="btn-settle" class="glass mini-btn" title="Статистика поселения (двойной клик по пустому месту)">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 14V9M8 14V3M13 14V6"/></svg>
+    Поселение
+  </button>
+
+  <div id="tooltip" class="glass hidden"></div>
+  <div id="toasts"></div>
+  <div id="modal-root" class="hidden"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
